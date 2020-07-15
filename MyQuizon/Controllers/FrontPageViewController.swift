@@ -10,6 +10,9 @@ import UIKit
 
 class FrontPageViewController: UIViewController {
 
+    @IBAction func StartPress(_ sender: Any) {
+        performSegue(withIdentifier: "startToQuiz" , sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
