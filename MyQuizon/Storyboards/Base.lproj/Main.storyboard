@@ -243,7 +243,6 @@
         <!--Quiz end-->
         <scene sceneID="24i-Mh-nOJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="foY-cX-PL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Quiz end" id="9iX-cO-AwT" customClass="EndViewController" customModule="MyQuizon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhN-ez-OBa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -349,7 +348,13 @@
                         <viewLayoutGuide key="safeArea" id="t8p-oH-F59"/>
                     </view>
                     <navigationItem key="navigationItem" id="hwM-GR-Ifv"/>
+                    <connections>
+                        <outlet property="correctLabel" destination="Lzi-Zd-WFg" id="UrA-ao-zmn"/>
+                        <outlet property="incorrectLabel" destination="EAf-La-u6H" id="HFr-Wr-uZU"/>
+                        <outlet property="totalLabel" destination="tD2-cR-lnp" id="JOo-Bq-AKY"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foY-cX-PL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1847.826086956522" y="95.758928571428569"/>
         </scene>

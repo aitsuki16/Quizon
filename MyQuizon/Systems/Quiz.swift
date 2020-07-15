@@ -53,4 +53,10 @@ class Quiz {
     func giveCorrectcount() -> Int{
         return correctCount 
     }
+    
+    func reset() {
+        currentQuestion = 0
+        incorrectCount = 0
+        correctCount = 0
+    }
 }

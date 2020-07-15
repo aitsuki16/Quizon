@@ -9,6 +9,7 @@
 import UIKit
 
 class FrontPageViewController: UIViewController {
+    var quizModule: Quiz = Quiz.init()
 
     @IBAction func StartPress(_ sender: Any) {
         performSegue(withIdentifier: "startToQuiz" , sender: nil)
