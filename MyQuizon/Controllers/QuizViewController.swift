@@ -20,13 +20,16 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         return quizAnswerList.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        answerCheck = quizAnswerList[indexPath.row]
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "quizCell") as! QuizCell
         cell.answerLabel.text = quizAnswerList[indexPath.row]
         return cell
         
     }
-    
+    var answerCheck = "nothing"
     var quizAnswerList = ["answer 1", "answer 2", "answer 3", "answer 4"]
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
@@ -38,6 +41,7 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         quizTable.delegate = self
         quizTable.dataSource = self
+        settup(check: quizModule.moveToNextQuestion())
 
     }
     
@@ -51,7 +55,17 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
-    
+    func settup(check:Bool){
+        if(check){
+            setCount()
+            setQuestion()
+            setChoices()
+            quizTable.reloadData()
+        }else {
+          performSegue(withIdentifier: "QuizToEnd", sender: nil)
+        }
+    }
+   
     
     func setQuestion() {
         questionLabel.text = quizModule.giveCurrentQuestion().giveQuestion()
@@ -59,6 +73,7 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func setChoices () {
         quizAnswerList = quizModule.giveCurrentQuestion().giveChoices()
+        answerCheck = quizAnswerList[0]
     }
 
     /*
