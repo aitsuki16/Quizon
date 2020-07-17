@@ -28,6 +28,7 @@ class EndViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "startToQuiz"){
             var seg = segue.destination as! QuizViewController
+            seg.quizModule = self.quizModule
             
         }
     }

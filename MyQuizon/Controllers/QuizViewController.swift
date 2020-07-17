@@ -9,12 +9,13 @@
 import UIKit
 
 class QuizCell: UITableViewCell {
-    var quizModule: Quiz!
+    
     
     @IBOutlet weak var answerLabel: UILabel!
 }
 
 class QuizViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var quizModule: Quiz!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quizAnswerList.count
     }
@@ -40,6 +41,25 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+    func setCount() {
+        var temp = ""
+        temp.append(String (quizModule.givecurrentQuestionValue()))
+        temp.append("/")
+        temp.append(String (quizModule.giveTotalQuestionCount()))
+        
+        countLabel.text = temp
+
+    }
+    
+    
+    
+    func setQuestion() {
+        questionLabel.text = quizModule.giveCurrentQuestion().giveQuestion()
+    }
+    
+    func setChoices () {
+        quizAnswerList = quizModule.giveCurrentQuestion().giveChoices()
+    }
 
     /*
     // MARK: - Navigation
