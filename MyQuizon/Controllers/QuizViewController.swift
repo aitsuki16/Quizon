@@ -34,6 +34,7 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBAction func actionSubmit(_ sender: Any) {
+        chooseAnswer()
     }
     
     @IBOutlet weak var quizTable: UITableView!
@@ -41,8 +42,13 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         quizTable.delegate = self
         quizTable.dataSource = self
-        settup(check: quizModule.moveToNextQuestion())
+        
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        quizModule.reset()
+        settup(check:true)
     }
     
     func setCount() {
@@ -75,15 +81,19 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         quizAnswerList = quizModule.giveCurrentQuestion().giveChoices()
         answerCheck = quizAnswerList[0]
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func chooseAnswer() {
+        quizModule.InputAnswer(input: quizModule.giveCurrentQuestion().checkAnswer(input: answerCheck))
+        settup(check: quizModule.moveToNextQuestion())
     }
-    */
+
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "QuizToEnd"){
+                   var seg = segue.destination as! EndViewController
+                   seg.quizModule = self.quizModule
+               }
+    }
+   
 
 }

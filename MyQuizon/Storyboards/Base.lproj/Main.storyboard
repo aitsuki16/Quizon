@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9iX-cO-AwT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ttd-2p-JTF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -228,12 +228,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="er2-GL-RrT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KiJ-FR-QIN"/>
+                    <navigationItem key="navigationItem" id="KiJ-FR-QIN" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
                         <outlet property="countLabel" destination="zsM-Ou-EbF" id="JaK-8k-iYr"/>
                         <outlet property="questionLabel" destination="4jX-3O-iVR" id="VxS-4I-7WN"/>
                         <outlet property="quizTable" destination="XaP-jB-aMT" id="65i-6z-eFe"/>
-                        <segue destination="9iX-cO-AwT" kind="show" identifier="quizToEnd" id="fcZ-Dg-pTr"/>
+                        <segue destination="9iX-cO-AwT" kind="show" identifier="QuizToEnd" id="fcZ-Dg-pTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mw-VQ-Mp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

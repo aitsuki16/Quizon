@@ -46,6 +46,10 @@ class Quiz {
         return questionList.count
     }
     
+    func giveIncorrectQuestionCount() -> Int{
+        return incorrectCount
+    }
+    
     func givecurrentQuestionValue() -> Int{
         return (currentQuestion + 1)
     }

@@ -18,20 +18,27 @@ class EndViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        settup()
 
         // Do any additional setup after loading the view.
     }
     
-
-   
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "startToQuiz"){
-            var seg = segue.destination as! QuizViewController
-            seg.quizModule = self.quizModule
-            
-        }
+    func settup(){
+        setCorrect()
+        setIncorrect()
+        setTotal()
     }
-   
-
+    
+    func setCorrect(){
+        correctLabel.text = String(quizModule.giveCorrectcount())
+    }
+    
+    func setIncorrect(){
+        incorrectLabel.text = String(quizModule.giveIncorrectQuestionCount())
+        
+    }
+    
+    func setTotal(){
+        totalLabel.text = String(quizModule.giveTotalQuestionCount())
+    }
 }
