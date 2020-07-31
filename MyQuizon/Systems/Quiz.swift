@@ -18,7 +18,9 @@ class Quiz {
         currentQuestion = 0
         correctCount = 0
         incorrectCount = 0
-        questionList = [Question.init(que: "what is 2 + 2?", ans: "4", c1: "5", c2: "6", c3: "4", c4: "1"), Question.init(que: "what is the capitol of indiana", ans: "indianapolis", c1: "indianapolis", c2: "michigan", c3: "new york", c4: "indiana"), Question.init(que: "what is 2 * 2", ans: "4", c1: "3", c2: "6", c3: "4", c4: "8"), Question.init(que: "how many fingers does a hand have?", ans: "5", c1: "10", c2: "4", c3: "6", c4: "5"), Question.init(que: "what came first the chiken or the egg", ans: "egg", c1: "rooster", c2: "me", c3: "chiken", c4: "egg")]
+        questionList = [Question.init(que: "(ṣabāḥul kẖayr) صباح الخير", ans: "おはよう", c1: "おやすみ", c2: "ありがとう", c3: "おはよう", c4: "またね"), Question.init(que: " (kayfa ḥālak) كيف حالك؟", ans: "お元気ですか？", c1: "美味しいですか？", c2: "お元気ですか？", c3: "おやすみ", c4: "おはよう"), Question.init(que: "(masā' al-khayr) مساء الخير　", ans: "今晩は", c1: "今晩は", c2: "ありがとう", c3: "どういたしまして", c4: "またね"), Question.init(que: "(tuṣbiḥ 'alā khayr) تصبح على خير", ans: "おやすみ", c1: "大好きです", c2: "お元気ですか", c3: "すみません", c4: "おやすみ"), Question.init(que: "(āsif!) أسف", ans: "ごめなさい", c1: "ありがとう", c2: "こんにちは", c3: "ごめなさい", c4: "おねがいします"),
+            Question.init(que: "(ma'a as-salāmah) مع السلامة", ans: "さようなら", c1: "さようなら", c2: "ありがとう", c3: "おやすみ", c4: "おはよう"),
+        Question.init(que: "(ṣabāḥul kẖayr) صباح الخير", ans: "おはよう", c1: "おやすみ", c2: "ありがとう", c3: "おはよう", c4: "またね"), Question.init(que: "(shukran) شكرا", ans: "ありがとう", c1: "ありがとう", c2: "どういたしまして", c3: "おやすみ", c4: "今晩は"),Question.init(que: "(al'afw) ألعفو", ans: "どういたしまして", c1: "お元気ですか？", c2: "また今度", c3: "ありがとう", c4: "どういたしまして"), Question.init(que: "(tuṣbiḥ 'alā khayr) تصبح على خير", ans: "おやすみ", c1: "大好き", c2: "お元気ですか", c3: "すみません", c4: "おやすみ"), Question.init(que: "(ana ouḥibouk) أنا أحبك", ans: "大好きです", c1: "大好きです", c2: "おやすみ", c3: "ごめなさい", c4: "おねがいします"),]
     }
     
     func giveCurrentQuestion() -> Question{
