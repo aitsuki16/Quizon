@@ -37,11 +37,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz-On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vss-tv-Mie">
                                         <rect key="frame" x="20" y="10" width="374" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.82237833739999999" green="0.69105499979999996" blue="0.34078359600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.1462441683" green="0.2583276927" blue="0.27855104209999998" alpha="0.53960867489085473" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Vss-tv-Mie" secondAttribute="trailing" constant="20" id="6V7-AS-ERF"/>
                                     <constraint firstAttribute="bottom" secondItem="Vss-tv-Mie" secondAttribute="bottom" constant="10" id="Fb1-rt-8Dk"/>
@@ -62,7 +62,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Start">
-                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.1462441683" green="0.2583276927" blue="0.27855104209999998" alpha="0.53960867489999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="StartPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoE-of-es7"/>
@@ -168,11 +168,9 @@
                                         <color key="backgroundColor" red="0.52739893222540934" green="0.71271088866360977" blue="0.7716699627597936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="CK7-4l-yUl"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Jze-Sn-kzl"/>
-                                            <constraint firstAttribute="width" constant="120" id="NKw-ni-YnS"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gl9-b0-QPT"/>
                                         </constraints>
-                                        <state key="normal" title="Submit Answer">
+                                        <state key="normal" title="Submit ">
                                             <color key="titleColor" red="0.0" green="0.21301450350000001" blue="0.4416243655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -210,7 +208,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jX-3O-iVR">
                                         <rect key="frame" x="20" y="20" width="374" height="80"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.11390196003837336" green="0.20143059741523991" blue="0.21781884882438696" alpha="0.53960867489999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

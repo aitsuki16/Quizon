@@ -18,6 +18,21 @@ class EndViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // get the navigation bar from the current navigation controller if there is one
+        let navBar = self.navigationController?.navigationBar
+
+        // change the bar tint color to change what the color of the bar itself looks like
+        navBar?.barTintColor = UIColor.brown
+
+        // tint color changes the color of the nav item colors eg. the back button
+        navBar?.tintColor = UIColor.white
+
+        // if you notice that your nav bar color is off by a bit, sometimes you will have to
+        // change it to not translucent to get correct color
+        navBar?.isTranslucent = false
+
+        // the following attribute changes the title color
+        navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         settup()
 
         // Do any additional setup after loading the view.
