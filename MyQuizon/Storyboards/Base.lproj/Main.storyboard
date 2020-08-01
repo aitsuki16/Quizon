@@ -164,11 +164,11 @@
                                 <rect key="frame" x="0.0" y="782" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umt-Ar-kls">
-                                        <rect key="frame" x="108.5" y="20" width="120" height="40"/>
+                                        <rect key="frame" x="258" y="25" width="120" height="30"/>
                                         <color key="backgroundColor" red="0.52739893222540934" green="0.71271088866360977" blue="0.7716699627597936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="B6V-gk-F7d"/>
-                                            <constraint firstAttribute="width" constant="120" id="HF2-Od-P38"/>
+                                            <constraint firstAttribute="height" constant="30" id="CK7-4l-yUl"/>
+                                            <constraint firstAttribute="width" constant="120" id="NKw-ni-YnS"/>
                                         </constraints>
                                         <state key="normal" title="Submit Answer">
                                             <color key="titleColor" red="0.0" green="0.21301450350000001" blue="0.4416243655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,8 +178,12 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/ 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-Ou-EbF">
-                                        <rect key="frame" x="278.5" y="30" width="35.5" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="63" y="25" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="MtG-nu-V5E"/>
+                                            <constraint firstAttribute="height" constant="30" id="RYC-T0-0fZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -188,9 +192,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="3iv-9Y-C3W"/>
                                     <constraint firstItem="zsM-Ou-EbF" firstAttribute="centerY" secondItem="afB-w8-CiS" secondAttribute="centerY" id="41T-br-Eos"/>
-                                    <constraint firstItem="zsM-Ou-EbF" firstAttribute="leading" secondItem="umt-Ar-kls" secondAttribute="trailing" constant="50" id="Gpj-3D-mGV"/>
-                                    <constraint firstAttribute="trailing" secondItem="zsM-Ou-EbF" secondAttribute="trailing" constant="100" id="LPr-MV-dRK"/>
+                                    <constraint firstAttribute="bottom" secondItem="zsM-Ou-EbF" secondAttribute="bottom" constant="25" id="FaT-an-e7z"/>
+                                    <constraint firstItem="zsM-Ou-EbF" firstAttribute="top" secondItem="afB-w8-CiS" secondAttribute="top" constant="25" id="H1s-CD-DNo"/>
                                     <constraint firstItem="umt-Ar-kls" firstAttribute="centerY" secondItem="afB-w8-CiS" secondAttribute="centerY" id="NdK-1m-jRB"/>
+                                    <constraint firstItem="umt-Ar-kls" firstAttribute="leading" secondItem="zsM-Ou-EbF" secondAttribute="trailing" constant="145" id="PDi-f3-ceJ"/>
+                                    <constraint firstItem="zsM-Ou-EbF" firstAttribute="leading" secondItem="afB-w8-CiS" secondAttribute="leading" constant="63" id="VMF-GR-VgL"/>
+                                    <constraint firstItem="umt-Ar-kls" firstAttribute="top" secondItem="afB-w8-CiS" secondAttribute="top" constant="25" id="WEc-er-feY"/>
+                                    <constraint firstAttribute="trailing" secondItem="umt-Ar-kls" secondAttribute="trailing" constant="36" id="mI5-Z9-cFN"/>
+                                    <constraint firstAttribute="bottom" secondItem="umt-Ar-kls" secondAttribute="bottom" constant="25" id="o8l-eP-W8e"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-iU-T32">
