@@ -163,12 +163,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afB-w8-CiS">
                                 <rect key="frame" x="0.0" y="782" width="414" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umt-Ar-kls">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umt-Ar-kls">
                                         <rect key="frame" x="258" y="25" width="120" height="30"/>
                                         <color key="backgroundColor" red="0.52739893222540934" green="0.71271088866360977" blue="0.7716699627597936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="CK7-4l-yUl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Jze-Sn-kzl"/>
                                             <constraint firstAttribute="width" constant="120" id="NKw-ni-YnS"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gl9-b0-QPT"/>
                                         </constraints>
                                         <state key="normal" title="Submit Answer">
                                             <color key="titleColor" red="0.0" green="0.21301450350000001" blue="0.4416243655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

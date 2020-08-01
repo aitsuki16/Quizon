@@ -15,12 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arabe-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Wq8-cx-p4E">
-                                <rect key="frame" x="54" y="279" width="307" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funkyplayer180500001" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-ip-79Q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zg8-ip-79Q" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8RZ-qP-c5z"/>
+                            <constraint firstItem="Zg8-ip-79Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="leO-8f-SOm"/>
+                            <constraint firstItem="Zg8-ip-79Q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nHJ-CR-2OS"/>
+                            <constraint firstAttribute="bottom" secondItem="Zg8-ip-79Q" secondAttribute="bottom" id="vRj-pO-KoF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arabe-removebg-preview" width="663" height="376"/>
+        <image name="funkyplayer180500001" width="450" height="450"/>
     </resources>
 </document>
